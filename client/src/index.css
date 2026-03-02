@@ -3,6 +3,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================================
+   DESIGN: Pixel Cumhurbaşkanlığı
+   Renk Paleti:
+   - Zemin: #0D1B2A (koyu lacivert)
+   - Altın: #F4C430
+   - Kırmızı: #E74C3C
+   - Yeşil: #2ECC71
+   - Mavi: #3498DB
+   - Kart arka: #1A2B3C
+   - Metin: #E8E8E8
+   Fontlar: Press Start 2P (başlıklar), Nunito (gövde)
+   ============================================================ */
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -12,166 +25,988 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --radius: 0.5rem;
+  --background: #0D1B2A;
+  --foreground: #E8E8E8;
+  --card: #1A2B3C;
+  --card-foreground: #E8E8E8;
+  --primary: #F4C430;
+  --primary-foreground: #0D1B2A;
+  --border: rgba(244, 196, 48, 0.2);
+  --input: rgba(255,255,255,0.1);
+  --ring: #F4C430;
+  --gold: #F4C430;
+  --red: #E74C3C;
+  --green: #2ECC71;
+  --blue: #3498DB;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100dvh;
+    width: 100vw;
   }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
+  #root {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
   }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
   .flex {
     min-height: 0;
     min-width: 0;
   }
 
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
+  /* ============ GAME ROOT ============ */
+  .game-root {
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
+  /* ============ INTRO SCREEN ============ */
+  .intro-screen {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .intro-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+  }
+
+  .intro-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 27, 42, 0.85) 0%,
+      rgba(13, 27, 42, 0.7) 50%,
+      rgba(13, 27, 42, 0.92) 100%
+    );
+  }
+
+  .intro-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .intro-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .intro-flag {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 12px rgba(227, 10, 23, 0.6));
+  }
+
+  .intro-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  .intro-title-if {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.6rem, 2.5vw, 0.9rem);
+    color: #E8E8E8;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .intro-title-president {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1rem, 4vw, 1.6rem);
+    color: #F4C430;
+    text-shadow: 3px 3px 0 #8B6914, 0 0 20px rgba(244, 196, 48, 0.5);
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+  }
+
+  .intro-title-olsaydim {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.6rem, 2.5vw, 0.9rem);
+    color: #E8E8E8;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .intro-subtitle {
+    font-size: 1rem;
+    color: rgba(232, 232, 232, 0.8);
+    margin: 0.25rem 0 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .intro-stats-preview {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: rgba(232, 232, 232, 0.7);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(244, 196, 48, 0.2);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+  }
+
+  .intro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .intro-label {
+    font-size: 0.85rem;
+    color: rgba(232, 232, 232, 0.8);
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .intro-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(244, 196, 48, 0.4);
+    border-radius: 4px;
+    color: #E8E8E8;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .intro-input:focus {
+    border-color: #F4C430;
+    box-shadow: 0 0 12px rgba(244, 196, 48, 0.3);
+  }
+
+  .intro-input::placeholder {
+    color: rgba(232, 232, 232, 0.35);
+  }
+
+  .intro-start-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: #F4C430;
+    color: #0D1B2A;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    box-shadow: 4px 4px 0 #8B6914, 0 0 20px rgba(244, 196, 48, 0.3);
+    transition: transform 0.1s;
+  }
+
+  .intro-start-btn:hover {
+    background: #FFD700;
+  }
+
+  .intro-disclaimer {
+    font-size: 0.65rem;
+    color: rgba(232, 232, 232, 0.35);
+    text-align: center;
+    max-width: 320px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ============ GAME LAYOUT ============ */
+  .game-layout {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .game-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+  }
+
+  .game-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 27, 42, 0.95) 0%,
+      rgba(13, 27, 42, 0.8) 40%,
+      rgba(13, 27, 42, 0.95) 100%
+    );
+  }
+
+  /* ============ GAME HEADER ============ */
+  .game-header {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    background: rgba(13, 27, 42, 0.9);
+    border-bottom: 2px solid rgba(244, 196, 48, 0.3);
+    flex-shrink: 0;
+  }
+
+  .game-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .game-flag {
+    font-size: 1.2rem;
+  }
+
+  .game-title-small {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.4rem, 1.5vw, 0.6rem);
+    color: #F4C430;
+    letter-spacing: 0.05em;
+  }
+
+  .game-day-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .game-day-label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.45rem;
+    color: rgba(232, 232, 232, 0.5);
+    letter-spacing: 0.1em;
+  }
+
+  .game-day-num {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    color: #F4C430;
+    text-shadow: 0 0 10px rgba(244, 196, 48, 0.5);
+  }
+
+  .game-header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .game-player-name {
+    font-size: 0.75rem;
+    color: rgba(232, 232, 232, 0.7);
+    font-family: 'Nunito', sans-serif;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ============ STAT BARS ============ */
+  .game-stats-panel {
+    position: relative;
+    z-index: 20;
+    padding: 0.6rem 1rem;
+    background: rgba(13, 27, 42, 0.85);
+    border-bottom: 1px solid rgba(244, 196, 48, 0.15);
+    flex-shrink: 0;
+  }
+
+  .stat-bar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative;
+  }
+
+  .stat-label {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+
+  .stat-icon {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  .stat-name {
+    font-size: 0.65rem;
+    color: rgba(232, 232, 232, 0.7);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+
+  .stat-value {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    margin-left: auto;
+  }
+
+  .stat-track {
+    flex: 1;
+    height: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .stat-fill {
+    height: 100%;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background-color 0.3s;
+  }
+
+  .stat-preview {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 2px;
+  }
+
+  .stat-danger-pulse {
+    position: absolute;
+    inset: 0;
+    background: rgba(231, 76, 60, 0.3);
+    border-radius: 2px;
+  }
+
+  .stat-effect-label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.45rem;
+    min-width: 24px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  /* ============ GAME MAIN ============ */
+  .game-main {
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    overflow: hidden;
+  }
+
+  /* ============ SWIPE CARD ============ */
+  .swipe-card-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swipe-card-back {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 10px);
+    background: #0F2035;
+    border: 2px solid rgba(244, 196, 48, 0.15);
+    border-radius: 8px;
+    transform: translateY(8px) rotate(-2deg);
+    z-index: 0;
+  }
+
+  .swipe-card {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: linear-gradient(145deg, #1E3048, #0F2035);
+    border: 2px solid rgba(244, 196, 48, 0.6);
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: calc(100dvh - 220px);
+    overflow-y: auto;
+  }
+
+  .swipe-card::-webkit-scrollbar {
+    width: 4px;
+  }
+  .swipe-card::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+  }
+  .swipe-card::-webkit-scrollbar-thumb {
+    background: rgba(244, 196, 48, 0.3);
+    border-radius: 2px;
+  }
+
+  /* Swipe etiketleri */
+  .swipe-label {
+    position: absolute;
+    top: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    z-index: 20;
+    border: 2px solid currentColor;
+  }
+
+  .yes-label {
+    right: 1rem;
+    color: #2ECC71;
+    background: rgba(46, 204, 113, 0.15);
+    border-color: #2ECC71;
+    transform: rotate(8deg);
+  }
+
+  .no-label {
+    left: 1rem;
+    color: #E74C3C;
+    background: rgba(231, 76, 60, 0.15);
+    border-color: #E74C3C;
+    transform: rotate(-8deg);
+  }
+
+  /* Kart header */
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-day-badge {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    color: rgba(232, 232, 232, 0.5);
+    letter-spacing: 0.1em;
+  }
+
+  .card-category {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.45rem;
+    color: #F4C430;
+    background: rgba(244, 196, 48, 0.1);
+    border: 1px solid rgba(244, 196, 48, 0.3);
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Danışman */
+  .card-advisor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .advisor-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 4px;
+    border: 2px solid;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .advisor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    image-rendering: pixelated;
+  }
+
+  .advisor-info {
+    flex: 1;
+  }
+
+  .advisor-name {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+
+  .advisor-title {
+    font-size: 0.7rem;
+    color: rgba(232, 232, 232, 0.5);
+    margin-top: 0.2rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  /* Olay metni */
+  .card-event {
+    flex: 1;
+  }
+
+  .card-event-text {
+    font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+    line-height: 1.6;
+    color: #E8E8E8;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+  }
+
+  .card-context {
+    font-size: 0.8rem;
+    color: rgba(232, 232, 232, 0.55);
+    margin: 0.5rem 0 0;
+    font-style: italic;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  /* Seçenekler */
+  .card-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .choice-btn {
+    padding: 0.6rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid;
+    transition: all 0.15s;
+    line-height: 1.3;
+  }
+
+  .no-btn {
+    background: rgba(231, 76, 60, 0.1);
+    border-color: #E74C3C;
+    color: #E74C3C;
+  }
+
+  .no-btn:hover {
+    background: rgba(231, 76, 60, 0.25);
+    transform: translateX(-2px);
+  }
+
+  .yes-btn {
+    background: rgba(46, 204, 113, 0.1);
+    border-color: #2ECC71;
+    color: #2ECC71;
+  }
+
+  .yes-btn:hover {
+    background: rgba(46, 204, 113, 0.25);
+    transform: translateX(2px);
+  }
+
+  /* Sürükleme ipucu */
+  .drag-hint {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    color: rgba(232, 232, 232, 0.3);
+    font-family: 'Nunito', sans-serif;
+    padding-top: 0.25rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .drag-icon {
+    font-size: 0.8rem;
+    opacity: 0.4;
+  }
+
+  /* ============ RESPONSE CARD ============ */
+  .response-card {
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(145deg, #1E3048, #0F2035);
+    border: 2px solid rgba(244, 196, 48, 0.6);
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    max-height: calc(100dvh - 220px);
+    overflow-y: auto;
+  }
+
+  .response-choice-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+  }
+
+  .response-choice-badge.yes {
+    background: rgba(46, 204, 113, 0.15);
+    border: 1px solid #2ECC71;
+    color: #2ECC71;
+  }
+
+  .response-choice-badge.no {
+    background: rgba(231, 76, 60, 0.15);
+    border: 1px solid #E74C3C;
+    color: #E74C3C;
+  }
+
+  .response-advisor {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .response-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 4px;
+    border: 2px solid;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .response-bubble {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+  }
+
+  .response-advisor-name {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .response-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #E8E8E8;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .response-effects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .effect-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .effect-label {
+    color: rgba(232, 232, 232, 0.7);
+  }
+
+  .effect-value {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+  .response-continue-btn {
+    padding: 0.75rem 1.5rem;
+    background: #F4C430;
+    color: #0D1B2A;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    box-shadow: 3px 3px 0 #8B6914;
+    align-self: center;
+    transition: transform 0.1s;
+  }
+
+  .response-continue-btn:hover {
+    background: #FFD700;
+    transform: translateY(-1px);
+  }
+
+  /* ============ GAME OVER ============ */
+  .gameover-screen {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .gameover-screen.defeat {
+    background: radial-gradient(ellipse at center, #2C0A0A 0%, #0D1B2A 70%);
+  }
+
+  .gameover-screen.victory {
+    background: radial-gradient(ellipse at center, #0A2C0A 0%, #0D1B2A 70%);
+  }
+
+  .crt-overlay {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .gameover-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .gameover-emoji {
+    font-size: 4rem;
+    filter: drop-shadow(0 0 20px rgba(244, 196, 48, 0.4));
+  }
+
+  .gameover-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: 0;
+    line-height: 1.3;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  }
+
+  .defeat-title {
+    color: #E74C3C;
+    text-shadow: 3px 3px 0 #8B1A1A;
+  }
+
+  .victory-title {
+    color: #F4C430;
+    text-shadow: 3px 3px 0 #8B6914;
+  }
+
+  .gameover-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(232, 232, 232, 0.8);
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    max-width: 360px;
+  }
+
+  .gameover-stats {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(244, 196, 48, 0.2);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .gameover-stat-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .gameover-stat-label {
+    font-size: 0.8rem;
+    color: rgba(232, 232, 232, 0.7);
+    font-family: 'Nunito', sans-serif;
+    min-width: 100px;
+  }
+
+  .gameover-stat-value {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #E8E8E8;
+    margin-left: auto;
+  }
+
+  .gameover-stat-value.highlight {
+    color: #F4C430;
+    text-shadow: 0 0 10px rgba(244, 196, 48, 0.5);
+  }
+
+  .gameover-mini-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .gameover-mini-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+
+  .gameover-stat-num {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.45rem;
+    color: rgba(232, 232, 232, 0.6);
+    min-width: 24px;
+    text-align: right;
+  }
+
+  .gameover-share-text {
+    font-size: 0.85rem;
+    color: rgba(232, 232, 232, 0.7);
+    font-family: 'Nunito', sans-serif;
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+  }
+
+  .gameover-buttons {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .gameover-btn {
+    flex: 1;
+    padding: 0.75rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.45rem, 1.5vw, 0.6rem);
+    cursor: pointer;
+    border: 2px solid;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+    transition: all 0.15s;
+  }
+
+  .share-btn {
+    background: rgba(52, 152, 219, 0.15);
+    border-color: #3498DB;
+    color: #3498DB;
+    box-shadow: 3px 3px 0 rgba(52, 152, 219, 0.3);
+  }
+
+  .share-btn:hover {
+    background: rgba(52, 152, 219, 0.3);
+  }
+
+  .restart-btn {
+    background: #F4C430;
+    border-color: #F4C430;
+    color: #0D1B2A;
+    box-shadow: 3px 3px 0 #8B6914;
+  }
+
+  .restart-btn:hover {
+    background: #FFD700;
   }
 }
