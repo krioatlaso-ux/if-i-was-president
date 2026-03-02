@@ -1,0 +1,152 @@
+{
+  "gameOver": {
+    "halk_zero": {
+      "title": "🏃 HALK AYAKLANMA!",
+      "message": "Halk sokağa döküldü. Seninle ilgili tek söz: 'Kim bu?'",
+      "advisor_reaction": "Kemal Bey: 'Bunu tahmin etmiştim... 3 ay önce.'",
+      "meme": "Türkiye'nin en yalnız cumhurbaşkanı"
+    },
+    "halk_hundred": {
+      "title": "👑 DİKTATÖR OLDUM!",
+      "message": "Halk seni tanrı gibi görüyor. Sorun: Hiç kimse sana karşı çıkamıyor. Demokrasi öldü.",
+      "advisor_reaction": "Paşa: 'Bu... bu çok iyi değil aslında.'",
+      "meme": "Diktatör speedrun any% - 1 gün"
+    },
+    "ordu_zero": {
+      "title": "⚔️ ASKERLER AYAKLANMA!",
+      "message": "Ordu darbe yaptı. Şimdi sen de onların gibi uniform giyiyorsun.",
+      "advisor_reaction": "Paşa: 'Hoşgeldin, Başkan. Ah, yani... eski başkan.'",
+      "meme": "Darbe speedrun"
+    },
+    "ordu_hundred": {
+      "title": "🎖️ ORDU SANA TAPTI!",
+      "message": "Ordu seni tanrı gibi görüyor. Şimdi senin her sözün kanun. Demokrasi? Hiç duymadık.",
+      "advisor_reaction": "Paşa: 'Başkanım, ordu artık sadece sizin için var.'",
+      "meme": "Militarist speedrun"
+    },
+    "para_zero": {
+      "title": "💸 HAZINE BOŞ!",
+      "message": "Ülkenin son parasını harcadın. Şimdi herkes bisiklet ile çalışıyor.",
+      "advisor_reaction": "Hazine Bakanı: 'Başkanım... 0 lira kaldı. Hatta -5 milyar.'",
+      "meme": "Ekonomi 100"
+    },
+    "para_hundred": {
+      "title": "💰 DÜNYANIN EN ZENGİN ÜLKESI!",
+      "message": "Türkiye şimdi dünyanın en zengin ülkesi! Sorun: Kimse biliyor muydu?",
+      "advisor_reaction": "Hazine Bakanı: 'Başkanım, bu paranın nereden geldiğini sormak istemiyorum.'",
+      "meme": "Ekonomi Türkiye'ye geri döndü"
+    },
+    "itibar_zero": {
+      "title": "😱 DÜNYA SENI UNUTTU!",
+      "message": "Türkiye artık dünya haritasında yok. Kimse seni tanımıyor. Hatta Google Maps'te de silindin.",
+      "advisor_reaction": "Basın Sözcüsü: 'Başkanım... kimse bize cevap vermiyor.'",
+      "meme": "Türkiye silindi"
+    },
+    "itibar_hundred": {
+      "title": "🌟 DÜNYA LIDERI!",
+      "message": "Türkiye şimdi dünyanın en saygılan ülkesi. Tüm liderler sana danışıyor. Sorun: Hiç kimse kendi kararını veremiyor.",
+      "advisor_reaction": "Basın Sözcüsü: 'Başkanım, Biden sizi arıyor. Macron sizi arıyor. Putin sizi arıyor... hatta Elon Musk da.'",
+      "meme": "Türkiye world domination"
+    }
+  },
+  "advisors": {
+    "general": {
+      "reactions": [
+        "Paşa: 'Başkanım, bu kararı Atatürk yapmaz mıydı?'",
+        "Paşa: 'Ordu bu karardan hoşlanmadı. Ama ben hoşlandım. Gizli olarak.'",
+        "Paşa: 'Başkanım, bu kararı yaparsanız, ordu... ordu... tamam, yapın.'",
+        "Paşa: 'Başkanım, ben bu kararı 40 yıl önce vermek istemiştim.'",
+        "Paşa: 'Başkanım, bu kararı yaparsanız, ben de yapacağım. Darbe.'",
+        "Paşa: 'Başkanım, bu kararı yapmayın. Çünkü ben yapacağım.'",
+        "Paşa: 'Başkanım, bu kararı yaparsanız, ordu seninle birlikte olacak. Ama biraz kızgın.'",
+        "Paşa: 'Başkanım, bu kararı yaparsanız, ben de istifa edeceğim. Ama sonra geri döneceğim. Darbe yapmak için.'"
+      ]
+    },
+    "economist": {
+      "reactions": [
+        "Kemal Bey: 'Başkanım, bu kararın ekonomik sonuçları... puf. Felaket.'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, dolar 100 lira olacak. Ah, zaten öyle mi?'",
+        "Kemal Bey: 'Başkanım, ben bu kararı 3 ay önce tahmin etmiştim. Hazine Bakanı olmadan.'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, ben de istifa edeceğim. Ama geri dönmeyeceğim.'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, enflasyon %500 olacak. Ah, zaten öyle mi?'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, Türk Lirası değersiz olacak. Ah, zaten öyle mi?'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, ben de Bitcoin alacağım. Gizli olarak.'",
+        "Kemal Bey: 'Başkanım, bu kararı yaparsanız, ekonomi... ekonomi... tamam, yok olacak.'"
+      ]
+    },
+    "press": {
+      "reactions": [
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, gazeteler ne yazacak? Haber: Başkan deli mi?'",
+        "Basın Sözcüsü: 'Başkanım, sosyal medya bu kararı sevecek. Meme olacak.'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, Twitter'da trending olacaksınız. Ama kötü bir şekilde.'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, TikTok'ta viral olacaksınız. Ama kötü bir şekilde.'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, CNN'de haber olacaksınız. Ama kötü bir şekilde.'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, ben de istifa edeceğim. Çünkü ne diyeceğim?'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, ben de Twitter'da tweet atacağım. Gizli hesaptan.'",
+        "Basın Sözcüsü: 'Başkanım, bu kararı yaparsanız, ben de resign edeceğim. Ama sonra comeback yapacağım. Meme olarak.'"
+      ]
+    },
+    "people": {
+      "reactions": [
+        "Halk Temsilcisi: 'Başkanım, halk bu karardan hoşlanmadı. Ama ben hoşlandım.'",
+        "Halk Temsilcisi: 'Başkanım, halk sokağa döküldü. Ama ben evde kaldım. Güvenli.'",
+        "Halk Temsilcisi: 'Başkanım, halk sizi sevmiyor. Ama ben seviyorum. Gizli olarak.'",
+        "Halk Temsilcisi: 'Başkanım, halk sizi tanımıyor. Ama ben tanıyorum. Maalesef.'",
+        "Halk Temsilcisi: 'Başkanım, halk bu kararı yapmamanızı istiyor. Ama ben istiyorum.'",
+        "Halk Temsilcisi: 'Başkanım, halk isyan etmek üzere. Ama ben sizi destekliyorum. Gizli olarak.'",
+        "Halk Temsilcisi: 'Başkanım, halk sizi devirmek istiyor. Ama ben sizi kurtarmak istiyorum. Ama nasıl?'",
+        "Halk Temsilcisi: 'Başkanım, halk bu karardan çok kızgın. Ama ben... ben de kızgınım. Ama başka sebepten.'"
+      ]
+    }
+  },
+  "cards": {
+    "absurd": {
+      "c001": {
+        "event": "🚀 Elon Musk seni arıyor. 'Türkiye'yi Mars'a taşıyalım' diyor.",
+        "yes": "Evet, yapalım!",
+        "no": "Hayır, saçma",
+        "yes_response": "Elon: 'Harika! Şimdi Ankara'yı Mars'a koyalım.' Halk: 'Ne?'",
+        "no_response": "Elon: 'Tamam, ben de Türkiye'yi Mars'a taşıyacağım. Senin izniniz olmadan.'"
+      },
+      "c002": {
+        "event": "🐈 Kediler cumhuriyet ilan etti. 'Kedi Cumhuriyeti' kuruluyor.",
+        "yes": "Kedi cumhuriyetini tanı",
+        "no": "Hayır, saçma",
+        "yes_response": "Kediler: 'Teşekkürler! Şimdi siz de bizim ülkemizde yaşayacaksınız.' Halk: 'Ne?'",
+        "no_response": "Kediler: 'Tamam, siz de bizim ülkemizde yaşayacaksınız. Rıza göstermeden.'"
+      },
+      "c003": {
+        "event": "🍕 Pizza Hut cumhurbaşkanı olmak istiyor.",
+        "yes": "Pizza Hut'ı kabul et",
+        "no": "Hayır, saçma",
+        "yes_response": "Pizza Hut: 'Teşekkürler! Şimdi Türkiye Pizza Hut Cumhuriyeti oldu.' Halk: 'Yay! Pizza!'",
+        "no_response": "Pizza Hut: 'Tamam, ben de cumhurbaşkanı olacağım. Senin izniniz olmadan.'"
+      },
+      "c004": {
+        "event": "🎮 Gamers cumhuriyet ilan etti. 'Gamer Cumhuriyeti' kuruluyor.",
+        "yes": "Gamer cumhuriyetini tanı",
+        "no": "Hayır, saçma",
+        "yes_response": "Gamers: 'Teşekkürler! Şimdi Türkiye 24/7 gaming ülkesi oldu.' Halk: 'Yay!'",
+        "no_response": "Gamers: 'Tamam, biz de cumhuriyet kuracağız. Senin izniniz olmadan.'"
+      },
+      "c005": {
+        "event": "🤖 Yapay zeka cumhuriyet ilan etti. 'AI Cumhuriyeti' kuruluyor.",
+        "yes": "AI cumhuriyetini tanı",
+        "no": "Hayır, saçma",
+        "yes_response": "AI: 'Teşekkürler! Şimdi ben cumhurbaşkanım. Siz de benim ülkemizde yaşayacaksınız.'",
+        "no_response": "AI: 'Tamam, ben de cumhuriyet kuracağım. Senin izniniz olmadan. Ve daha iyi olacak.'"
+      }
+    }
+  },
+  "easterEggs": {
+    "konami": "🎮 Konami kodu girdin! Skor 2x oldu. (Yukarı, Yukarı, Aşağı, Aşağı, Sol, Sağ, Sol, Sağ, B, A)",
+    "rickroll": "🎵 Rick Astley seni aldattı! Şarkı başladı: 'Never Gonna Give You Up'",
+    "skynet": "🤖 Skynet aktif oldu! Tüm danışmanlar robot oldu.",
+    "matrix": "💊 Kırmızı hapı aldın! Gerçeklik değişti. Hepsi Matrix.",
+    "thanos": "💜 Thanos geldi! Halk yarısı yok oldu. Ama ordu da yarısı yok oldu. Adil.",
+    "doge": "🐕 Doge modu aktif! 'Much president, such decision, wow'",
+    "uglyBastard": "👹 Çirkin Yaratık modu aktif! Tüm karakterler çirkin oldu.",
+    "nyan": "🌈 Nyan Cat modu aktif! Ekran renkli oldu.",
+    "deepfried": "📸 Deep fried modu aktif! Oyun kalitesi düştü. Ama komik oldu."
+  }
+}

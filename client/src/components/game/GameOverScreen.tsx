@@ -1,6 +1,7 @@
 // ============================================================
 // DESIGN: Pixel Cumhurbaşkanlığı — Oyun bitti ekranı
 // GAME OVER / ZAFERi retro pixel art tarzında göster
+// KOMİK: Sarcastic mesajlar, danışman tepkileri, meme potansiyeli
 // ============================================================
 
 import { motion } from "framer-motion";
