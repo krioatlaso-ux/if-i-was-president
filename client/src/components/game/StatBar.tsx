@@ -4,7 +4,7 @@
 // ============================================================
 
 import { motion, AnimatePresence } from "framer-motion";
-import { STATS } from "@/data/cards";
+import { STAT_DEFINITIONS } from "@/core";
 import type { GameStats } from "@/hooks/useGameState";
 
 interface StatBarProps {
@@ -24,7 +24,7 @@ function getBarColor(value: number): string {
 }
 
 function getDangerPulse(value: number): boolean {
-  return value <= 15 || value >= 90;
+  return value <= 10 || value >= 95;
 }
 
 export function StatBar({ stats, swipeDirection, hoveredChoice, yesEffect, noEffect }: StatBarProps) {
@@ -32,7 +32,7 @@ export function StatBar({ stats, swipeDirection, hoveredChoice, yesEffect, noEff
 
   return (
     <div className="stat-bar-container">
-      {STATS.map((stat) => {
+      {STAT_DEFINITIONS.map((stat) => {
         const value = stats[stat.key];
         const effect = activeEffect ? (activeEffect[stat.key] ?? 0) : 0;
         const previewValue = Math.max(0, Math.min(100, value + effect));
